@@ -9,9 +9,8 @@
 <body>
     <h2>
         <img alt="Avatar" class="avatar" src="{{ url_for('static', filename='image/avatar.png') }}">
-        {{ name }}'s Watchlist
+        {{ user.name }}'s Watchlist
     </h2>
-    <h2>{{ name }}'s Watchlist</h2>
     {# 使用 length 过滤器获取 movies 变量的长度 #}
     <p>{{ movies|length }} Titles</p>
     <ul class="movie-list">
